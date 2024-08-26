@@ -10,7 +10,7 @@ export const selectError = state => state.tasks.error;
 export const selectFilterName = state => state.filter;
 
 
-export const selectVisibleContacts = createSelector(
+export const selectFilteredContacts = createSelector(
     [selectContacts, selectFilterName],
     (contacts, filter) => {
         return contacts.filter(contact => contact.name.toLowerCase()
