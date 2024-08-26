@@ -9,7 +9,6 @@ const Contact = ({ contact: { id, name, number } }) => {
 
     const dispatch = useDispatch();
 
-
     return (
         <li className={css.list}>
             <div className={css.contactItem}>
