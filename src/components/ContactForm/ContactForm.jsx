@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import { addContact } from "../../redux/contactsSlice";
+import { addContact } from "../../redux/contactsOps";
 
 
 import { Formik, Form, Field, ErrorMessage } from "formik";
@@ -24,12 +24,12 @@ const initialValues = {
 
 
 const ContactForm = () => {
-    const dispstch = useDispatch();
+    const dispatch = useDispatch();
 
 
     const handleSubmit = (values, actions) => {
         // console.log(values);
-        dispstch(addContact({
+        dispatch(addContact({
             name: values.username,
             number: values.number
         }));
