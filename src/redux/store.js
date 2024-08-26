@@ -16,4 +16,3 @@ export const store = configureStore({
 });
 
 
-// https://66cb33b84290b1c4f199bca3.mockapi.io/:endpoint
